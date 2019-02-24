@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PembagianActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="235dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="PEMBAGIAN"
+        android:textColor="@android:color/white"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bagi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:background="@android:color/white"
+        android:hint="Bilangan 1"
+        android:paddingHorizontal="50dp"
+        android:textAlignment="center"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/bagi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bagi1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/white"
+        android:hint="Bilangan 2"
+        android:paddingHorizontal="50dp"
+        android:textAlignment="center"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btnhasilbagi"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/bagi2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/background1"
+        android:text="Hasil"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/tvhasilbagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnhasilbagi"
+        android:layout_centerHorizontal="true"
+        android:text="0.0"
+        android:textSize="125dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="back"
+        android:layout_below="@id/tvhasilbagi"/>
+
+</RelativeLayout>

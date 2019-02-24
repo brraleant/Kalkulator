@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerkalianActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="235dp"
+        android:src="@drawable/background1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="PERKALIAN"
+        android:textColor="@android:color/white"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/kali1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:background="@android:color/white"
+        android:hint="Bilangan 1"
+        android:paddingHorizontal="50dp"
+        android:textAlignment="center"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/kali2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kali1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/white"
+        android:hint="Bilangan 2"
+        android:paddingHorizontal="50dp"
+        android:textAlignment="center"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/btnhasilkali"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/kali2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/background1"
+        android:text="Hasil"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/tvhasilkali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnhasilkali"
+        android:layout_centerHorizontal="true"
+        android:text="0.0"
+        android:textSize="125dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvhasilkali"
+        android:hint="back" />
+</RelativeLayout>

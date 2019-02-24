@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/kalkulator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/background"
+        android:layout_alignTop="@+id/background"
+        android:layout_alignRight="@id/background"
+        android:layout_alignBottom="@id/background"
+        android:gravity="center_horizontal"
+        android:paddingTop="120dp"
+        android:text="Kalkulator Sederhana"
+        android:textColor="@android:color/white"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnjumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:background="@android:color/white"
+        android:hint="PENJUMLAHAN"
+        android:paddingHorizontal="80dp"
+        android:textColorHint="@android:color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnkurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnjumlah"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        android:hint="PENGURANGAN"
+        android:paddingHorizontal="80dp"
+        android:textColorHint="@android:color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnkali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnkurang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        android:hint="PERKALIAN"
+        android:paddingHorizontal="99dp"
+        android:textColorHint="@android:color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnbagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnkali"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        android:hint="PEMBAGIAN"
+        android:paddingHorizontal="88dp"
+        android:textColorHint="@android:color/black"
+        android:textSize="20dp" />
+</RelativeLayout>
